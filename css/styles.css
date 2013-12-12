@@ -108,7 +108,7 @@ footer {
 ==============================*/
 header h1 a {
 	text-align: center;
-	background: gray url("../img/logo.png") no-repeat center center;
+	background: gray url(".../img/logo.png") no-repeat center center;
 	border: 5px solid white;
 	display: block;
 	height: 150px;
