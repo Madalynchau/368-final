@@ -12,12 +12,18 @@ background: -o-radial-gradient(center, ellipse cover, rgba(204,237,245,1) 0%, rg
 background: -ms-radial-gradient(center, ellipse cover, rgba(204,237,245,1) 0%, rgba(204,237,245,1) 8%, rgba(204,237,245,1) 13%, rgba(199,236,245,1) 22%, rgba(168,223,237,1) 43%, rgba(117,189,209,1) 68%, rgba(66,138,158,1) 89%, rgba(47,122,143,1) 100%);
 background: radial-gradient(ellipse at center, rgba(204,237,245,1) 0%, rgba(204,237,245,1) 8%, rgba(204,237,245,1) 13%, rgba(199,236,245,1) 22%, rgba(168,223,237,1) 43%, rgba(117,189,209,1) 68%, rgba(66,138,158,1) 89%, rgba(47,122,143,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccedf5', endColorstr='#2f7a8f', GradientType=1 );
+	
+	font-family: 'Gilda Display', serif; /* webhosted font <link href='http://fonts.googleapis.com/css?family=Gilda+Display' rel='stylesheet' type='text/css'>
+*/
 
 }
 
 img {
 	max-width: 100%;
 }
+
+
+
 	
 
 /*==============================
@@ -34,14 +40,14 @@ img {
 .intro {
 	float: left;
 	width: 50%;
-	
 	color: #4BA3B3;
 	text-align: left;
-	
 
 }
 
+
 aside {
+	
 	float: left;
 	width: 50%;
 	padding-top: 100px;
@@ -52,7 +58,7 @@ aside {
 }
 
 aside img {
-	
+
 	text-align: right;
 	position: relative;
 	width: 100%;
@@ -91,6 +97,10 @@ li {
 
 header h1 {
 	margin: 0;
+}
+
+footer {
+	text-align:center;
 }
 
 /*==============================
@@ -186,7 +196,6 @@ h3 {
 }
 
 .portfolio li a {
-	text-transform: capitalize;
 	text-align: center;
 	text-decoration:none;
 	color: white;
@@ -371,7 +380,7 @@ h3 {
 @media screen and ( max-width: 1440px ) {
 	
 	body {
-		background: red;	
+		background: ;	
 	}
 		
 
@@ -384,7 +393,7 @@ h3 {
 @media screen and ( max-width: 1040px ) {
 	
 	body {
-		background: green;	
+		background:;	
 	}
 	
 	.container { 
@@ -419,7 +428,7 @@ h3 {
 @media screen and ( max-width: 768px ) {
 	
 	body {
-		background:blue ;	
+		background: ;	
 	}
 	
 	.container { 
@@ -475,7 +484,7 @@ h3 {
 @media screen and ( max-width: 480px ) {
 	
 		body {
-		background:yellow;	
+		background:;	
 	}
 
 	
