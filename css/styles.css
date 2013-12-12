@@ -1,0 +1,526 @@
+/*==============================
+	Global
+==============================*/
+
+body {
+
+background: rgba(204,237,245,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(204,237,245,1) 0%, rgba(204,237,245,1) 8%, rgba(204,237,245,1) 13%, rgba(199,236,245,1) 22%, rgba(168,223,237,1) 43%, rgba(117,189,209,1) 68%, rgba(66,138,158,1) 89%, rgba(47,122,143,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, , color-stop(0%, rgba(204,237,245,1)), color-stop(8%, rgba(204,237,245,1)), color-stop(13%, rgba(204,237,245,1)), color-stop(22%, rgba(199,236,245,1)), color-stop(43%, rgba(168,223,237,1)), color-stop(68%, rgba(117,189,209,1)), color-stop(89%, rgba(66,138,158,1)), color-stop(100%, rgba(47,122,143,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(204,237,245,1) 0%, rgba(204,237,245,1) 8%, rgba(204,237,245,1) 13%, rgba(199,236,245,1) 22%, rgba(168,223,237,1) 43%, rgba(117,189,209,1) 68%, rgba(66,138,158,1) 89%, rgba(47,122,143,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(204,237,245,1) 0%, rgba(204,237,245,1) 8%, rgba(204,237,245,1) 13%, rgba(199,236,245,1) 22%, rgba(168,223,237,1) 43%, rgba(117,189,209,1) 68%, rgba(66,138,158,1) 89%, rgba(47,122,143,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(204,237,245,1) 0%, rgba(204,237,245,1) 8%, rgba(204,237,245,1) 13%, rgba(199,236,245,1) 22%, rgba(168,223,237,1) 43%, rgba(117,189,209,1) 68%, rgba(66,138,158,1) 89%, rgba(47,122,143,1) 100%);
+background: radial-gradient(ellipse at center, rgba(204,237,245,1) 0%, rgba(204,237,245,1) 8%, rgba(204,237,245,1) 13%, rgba(199,236,245,1) 22%, rgba(168,223,237,1) 43%, rgba(117,189,209,1) 68%, rgba(66,138,158,1) 89%, rgba(47,122,143,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccedf5', endColorstr='#2f7a8f', GradientType=1 );
+
+}
+
+img {
+	max-width: 100%;
+}
+	
+
+/*==============================
+	Structure & Layout 
+==============================*/
+.container { 
+ 	background: white;
+	margin: 0 auto;
+	width: 960px;
+	max-width:960px;
+	
+}
+
+.intro {
+	float: left;
+	width: 50%;
+	
+	color: #4BA3B3;
+	text-align: left;
+	
+
+}
+
+aside {
+	float: left;
+	width: 50%;
+	padding-top: 100px;
+}
+
+.padding {
+	padding: 0 20px;
+}
+
+aside img {
+	
+	text-align: right;
+	position: relative;
+	width: 100%;
+}
+
+.header {
+	padding-top: .25em;
+	backround:red;
+	text-align: center;
+	width: 100%;
+	margin: 0;
+}
+
+.work {
+	background: gray;
+	border: 2px solid grey;
+	text-align: center;
+
+}
+
+
+nav {
+	position: absolute;
+	background: gray;
+	height: 64px;
+	top: 2.5em;
+	width: 960px;
+}
+
+
+li {
+	list-style: none;
+	color: white;
+	text-align:left;
+}
+
+header h1 {
+	margin: 0;
+}
+
+/*==============================
+	Logo
+==============================*/
+header h1 a {
+	text-align: center;
+	background: gray url("../img/logo.png") no-repeat center center;
+	border: 5px solid white;
+	display: block;
+	height: 150px;
+	left:  7em;
+	position:relative;
+	text-indent: -999em;
+	width: 170px;
+
+	z-index: 1;
+	
+	/* CSS 3*/
+	transition: background .25s;
+}
+
+
+header h1 a:hover {
+	background: #4BA3B3 url("../img/logo.png") no-repeat center center;
+
+}
+
+
+/*==============================
+	Navigation
+==============================*/
+
+header li {
+	float: left;
+	list-style: none;
+	text-align:center;
+
+}
+
+/* Remove inherited margin on <ul> */
+header ul {
+	padding: 0;
+	margin: 0;
+}
+
+/* Push links far right w/o floats */
+nav li:nth-child(1) {
+	margin-left: 470px;
+}
+
+
+
+nav a:link,
+nav a:visited {
+	color: white;
+	height: 64px;
+	display: block;
+	text-align: center;
+	line-height: 64px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 128px;
+	
+	/*CSS 3*/
+	transition: margin-top .5s;
+}
+
+nav a:hover, 
+nav a:active {
+	background-color: #4BA3B3;
+}
+
+
+/*==============================
+	Navigation: Page Indicators
+==============================*/
+.portfolio li:nth-child(2) a,
+.contact li:nth-child(3) a {
+	background: rgba(255,255,255,.15);
+}
+
+/*==============================
+	Portfolio
+==============================*/
+
+.portfolio h2 {
+	color: white;
+}
+
+h3 {
+	color: #34A4B3;
+}
+
+.portfolio li a {
+	text-transform: capitalize;
+	text-align: center;
+	text-decoration:none;
+	color: white;
+}
+
+.portfolio li a:hover {
+	color: purple;
+	
+}
+
+.thumbs li {
+	display: inline-block;
+}
+
+.thumbs li:hover {
+	border: 2.5px solid #0FF;
+}
+
+.thumbs li img {
+	height: 150px;
+	margin: 10px;
+	padding: 2.5px;
+	text-align: center;
+}
+
+
+
+.fullsize li img {
+	width: 95%;
+}
+
+
+
+.thumbs li:nth-child(1) img {
+  border:2.5px solid white;
+  
+}
+.thumbs li:nth-child(2) img {
+  border:2.5px solid white;
+  
+}
+
+.thumbs li:nth-child(3) img {
+  border:2.5px solid white;
+  
+}
+
+.thumbs li:nth-child(4) img {
+  border:2.5px solid white;
+  
+}
+
+.thumbs li:nth-child(5) img {
+  border:2.5px solid white;
+  
+}
+
+.thumbs li:nth-child(6) img {
+  border:2.5px solid white;
+  
+}
+
+ 
+
+
+
+#design:target {
+  border: 5px solid #34A4B3;
+  z-index: 1;
+}
+
+#ryan:target {
+  border: 5px solid #34A4B3 ;
+  z-index: 2;
+}
+
+#fandf:target {
+  border: 5px solid #34A4B3 ;
+  z-index: 3;
+}
+
+#ifly:target {
+  border: 5px solid #34A4B3;
+  z-index: 4;
+}
+
+#logo:target {
+  border: 5px solid #34A4B3 ;
+  z-index: 5;
+}
+
+#manipulation:target {
+  border: 5px solid #34A4B3 ;
+  z-index: 6;
+}
+	
+
+.portfolio li {
+	list-style: none;
+	color: white;
+	text-align:left;
+}
+
+	.intro:after,
+	.intro:before,
+	aside:before,
+	aside:after,
+	article:after,
+	article:before,
+	.container:before,
+	.container:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+/*==============================
+	Contact Page
+==============================*/
+
+ .contact section {
+	 margin: 10px 0;
+	color: white;
+	background: gray;
+	border: 2px solid grey;
+	text-align: left;
+}
+
+.contact h2 {
+	margin: 10px;
+}
+
+.contact section li {
+	color: #34A4B3;
+	font-size: 18px;
+}
+
+.contact section .first-ul li:nth-child(2n+2) {
+	color: white;
+	margin-left: 50px;
+}
+
+.contact section .second-ul li {
+	margin-left: 50px;
+}
+
+
+
+.contact  section a {
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	height: 50px;
+	line-height: 50px;
+	padding-left:60px;
+	margin: 5px 0;
+}
+
+.contact  section a:hover {
+	color: #34A4B3;
+} 
+
+.contact #instagram a:link {
+	background: url(../img/instagram.png) no-repeat 0 0;
+	background-size: 50px 50px;
+	
+}
+
+.contact #facebook a:link{
+  background: url(../img/facebook.jpg) no-repeat  center left;
+  background-size: 50px 50px;
+}
+
+
+/*===============
+	 LARGE DESKTOP
+===============*/
+@media screen and ( max-width: 1440px ) {
+	
+	body {
+		background: red;	
+	}
+		
+
+} /* end of Desktop */
+
+
+/*===============
+	STANDARD DESKTOP
+===============*/
+@media screen and ( max-width: 1040px ) {
+	
+	body {
+		background: green;	
+	}
+	
+	.container { 
+ 	background: white;
+	margin: 0 auto;
+	width: 750px;
+	
+}
+	
+	 header h1 a {
+		left:5em;
+	}
+	
+	nav li:nth-child(1) {
+		margin-left: 380px;
+}
+
+.thumbs li img {
+	height: 230px;
+	margin: 10px;
+	text-align: center;
+	
+} 
+	
+	
+
+} /* end of Desktop */
+
+/*===============
+	TABLET
+===============*/
+@media screen and ( max-width: 768px ) {
+	
+	body {
+		background:blue ;	
+	}
+	
+	.container { 
+ 	background: white;
+	margin: 0 auto;
+	width: 460px;
+}
+	
+	nav li:nth-child(1) {
+		margin-left: 210px;
+	}
+	
+	
+	 header h1 a {
+		left: .75em;
+	}
+
+	
+	header li {
+	font-size:80%;
+}
+
+	nav a:link,
+	nav a:visited {
+		height: 64px;
+		line-height: 64px;
+		width: 120px;
+	
+	}
+	
+	.intro {
+		width: 100%;
+		float: none;
+	}
+	
+	aside {
+		width: 100%;
+		float: none;
+		padding-top: 10px;
+	}
+	
+	.thumbs li img {
+	height: 190px;
+	margin: 10px;
+	text-align: center;
+	}
+
+ /* end of TABLET */
+
+/*===============
+	PHONE
+===============*/
+@media screen and ( max-width: 480px ) {
+	
+		body {
+		background:yellow;	
+	}
+
+	
+	.container { 
+ 	background: white;
+	margin: 0 auto;
+	width: 370px;
+}
+	
+	nav li:nth-child(1) {
+		margin-left: 200px;
+	}
+	
+	
+	 header h1 a {
+		left: .25em;
+	}
+
+
+	 header li {
+	font-size:70%;
+}
+
+	nav a:link,
+	nav a:visited {
+		height: 64px;
+		line-height: 64px;
+		width: 75px;
+	}
+	
+		.intro {
+		width: 100%;
+		float: none;
+	}
+	
+	aside {
+		width: 100%;
+		float: none;
+		padding-top: 10px;
+	}
+	
+	.thumbs li img {
+	height: 140px;
+	margin: 10px;
+	text-align: center;
+	
+} /* end of phone */
+
